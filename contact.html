@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InsightU - Contact</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="globel.css">
+</head>
+
+<body>
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="three-body">
+      <div class="three-body__dot"></div>
+      <div class="three-body__dot"></div>
+      <div class="three-body__dot"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand brand-box" href="index.html">
+        <img src="Logo 250px.png" alt="InsightU Logo" class="navbar-logo">
+        InsightU
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#contactNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="contactNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item" id="navDashboard" style="display: none;"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item" id="navContact" style="display: none;"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item" id="navLogout" style="display: none;"><a class="nav-link" href="login.html" id="logoutLink">Logout</a></li>
+          <li class="nav-item" id="navLogin"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item" id="navSignup"><a class="nav-link" href="signup.html">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+
+        <!-- Left Info -->
+        <div class="col-lg-5">
+          <div class="info-card h-100">
+            <p class="small-title">Get in Touch</p>
+            <h1>Contact InsightU</h1>
+            <p class="intro-text">
+              We are here to support your academic journey. Feel free to contact us
+              for help, questions, or feedback about the InsightU platform.
+            </p>
+
+            <div class="contact-item">
+              <div class="icon-box"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <h5>Email</h5>
+                <p>support@insightu.edu</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-box"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <h5>Phone</h5>
+                <p>(123) 456-7890</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-box"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <h5>Address</h5>
+                <p>InsightU Student Support Center, University of Rajarata, Mihintale.</p>
+              </div>
+            </div>
+
+            <div class="social-area">
+              <h6>Follow us</h6>
+              <div class="social-links">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Form -->
+        <div class="col-lg-7">
+          <div class="form-card h-100">
+            <h2>Send Us a Message</h2>
+            <p class="form-subtext">
+              Please fill in the form below and we will get back to you soon.
+            </p>
+
+            <form id="contactForm" novalidate>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control custom-input" id="fullName" placeholder="Enter your full name">
+                  <small class="error-text" id="nameError"></small>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control custom-input" id="email" placeholder="Enter your email">
+                  <small class="error-text" id="emailError"></small>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control custom-input" id="subject" placeholder="Enter subject">
+                <small class="error-text" id="subjectError"></small>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control custom-input textarea-box" id="message" rows="5"
+                  placeholder="Write your message"></textarea>
+                <small class="error-text" id="messageError"></small>
+              </div>
+
+              <div class="button-wrap">
+                <button type="submit" class="send-btn">Send Message</button>
+              </div>
+            </form>
+
+            <div class="map-box">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.414630507293!2d80.49872346842412!3d8.36080868072189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afc8a63370239cb%3A0xfde408ba97b0d4d3!2sRajarata%20University%20of%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1773333881519!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container-fluid px-4">
+      <div class="row align-items-center">
+        <!-- Left: Logo & Copyright -->
+        <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+          <a href="index.html" class="footer-brand d-inline-flex align-items-center mb-2">
+            <img src="Logo 250px.png" alt="InsightU Logo" class="footer-logo">
+          </a>
+          <p class="text-muted small mb-0">&copy; 2026 InsightU. All rights reserved.</p>
+        </div>
+
+        <!-- Center: Links -->
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <div class="d-flex flex-column align-items-center">
+            <a href="mailto:support@insightu.edu" class="footer-link mb-2"><i
+                class="bi bi-envelope-fill me-2"></i>support@insightu.edu</a>
+            <a href="tel:1234567890" class="footer-link"><i class="bi bi-telephone-fill me-2"></i>(123) 456-7890</a>
+          </div>
+        </div>
+
+        <!-- Right: Social Icons -->
+        <div class="col-md-4">
+          <p class="text-muted small text-center text-md-end mb-2 d-none d-md-block">Follow us</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>window.addEventListener('load', function () { document.getElementById('page-loader').classList.add('hidden'); });</script>
+  <script src="contact.js"></script>
+</body>
+
+</html>
